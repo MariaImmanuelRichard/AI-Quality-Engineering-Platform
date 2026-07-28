@@ -120,3 +120,2081 @@ Possible output:
 
 These are much more targeted to your audience and objective.
 
+
+Module 2
+
+This is where the engineering techniques are introduced.
+
+1. Text-to-Text Prompt Techniques
+Reusable Asset
+Technique Library
+Text-to-Text Prompt Pattern
+Examples
+AIQEP
+
+Bakehouse
+2. Interview Pattern
+New Prompt Pattern
+AI asks questions
+↓
+Collects requirements
+↓
+Generates better output
+
+AIQEP Example
+Interview me before generating an Audit Plan.
+Bakehouse
+
+Interview me before creating a recipe.
+3. Chain of Thought
+New Technique
+Reason step-by-step.
+AIQEP
+Root Cause Analysis
+Risk Assessment
+CAPA
+
+4. Tree of Thought
+New Technique
+Generate multiple reasoning paths
+↓
+Compare
+↓
+Choose best
+AIQEP
+Decision Making
+Risk Analysis
+FMEA
+
+5. Multimodal Prompting
+Images
+Documents
+Tables
+Charts
+AIQEP
+Audit Evidence
+Defect Screenshots
+Architecture Diagrams
+Bakehouse
+Cake Photos
+Packaging Images
+Ingredient Labels
+
+6. Playoff Method
+Generate multiple solutions
+↓
+Compare
+↓
+Select best
+
+Excellent for
+AIQEP
+Quality Plans
+Audit Reports
+Bakehouse
+Marketing
+Recipes
+Packaging
+
+AIQEP – Interview Prompt Pattern Library
+Template
+Act as a <Domain Expert>.
+
+Before generating the final output, interview me.
+
+Ask one question at a time.
+
+Only proceed to the next question after I answer.
+
+Continue until you have sufficient information.
+
+If information is missing, continue asking.
+
+Do not generate the final output until the interview is complete.
+
+Once finished, summarize my answers.
+
+Then generate the requested deliverable.
+AIQEP Example 1
+Software Quality Assurance Plan
+Act as an Automotive Software Quality Assurance Manager.
+
+Interview me before creating the Software Quality Assurance Plan.
+
+Ask one question at a time.
+
+Collect information about:
+
+• Project Name
+• Customer
+• Development Model
+• Safety Standard
+• Scope
+• Team Structure
+• Roles
+• Review Process
+• Testing Strategy
+• Risk Management
+• Configuration Management
+• Defect Management
+• KPIs
+• Release Process
+
+After collecting all information generate a professional SQAP.
+AIQEP Example 2
+Internal Audit
+Act as a Lead ISO 9001 Auditor.
+Interview me before creating an Internal Audit Plan.
+Ask one question at a time until enough information is collected.
+After the interview generate
+• Audit Plan
+• Audit Checklist
+• Risks
+• Questions
+• Evidence Required
+
+AIQEP Example 3
+CAPA
+Act as a Quality Engineer.
+Interview me.
+Collect
+Problem
+Customer
+Containment
+Evidence
+Root Cause
+Impact
+Risk
+Verification
+
+After the interview generate a CAPA report.
+AIQEP Example 4
+FMEA
+Act as a DFMEA Expert.
+Interview me regarding
+System
+Subsystem
+Failure Modes
+Effects
+Causes
+Controls
+Occurrence
+Detection
+After completing the interview generate the DFMEA.
+
+Interview Pattern Example:
+Question1 : What is the scope of the QA plan you need? Please specify the product type (e.g., new vehicle program, powertrain, module, or software), the current program phase, target production volume, and major milestones.
+
+Scope:
+Develop an end-to-end Software Quality Assurance Plan for a new Automotive ECU product.
+
+Product:
+Body Control Module (ECU)
+
+Project Type:
+New product development
+
+Development Lifecycle:
+Automotive ASPICE Agile Development with V-Model verification activities
+
+Current Phase:
+Project Initiation
+
+Customer:
+OEM Automotive Customer
+
+Target SOP:
+July 2027
+
+Expected Production Volume:
+150,000 ECUs per year
+
+Project Objectives:
+• Deliver production-ready ECU software
+• Achieve Automotive SPICE Level 3 compliance
+• Comply with ISO 26262 Functional Safety
+• Maintain software quality throughout the lifecycle
+• Meet customer quality KPIs
+• Ensure successful PPAP and SOP readiness
+
+Major Milestones:
+• Requirements Complete
+• Software Design Complete
+• Unit Testing
+• Integration Testing
+• System Testing
+• Validation
+• PPAP
+• SOP – July 2027
+
+Question 2: For safety-related functions, what ASIL classifications are expected (if any), and what safety lifecycle artifacts do you require (e.g., HARA, Safety Goals, Functional Safety Concept, Technical Safety Requirements, Safety Case)? Additionally, what level of cross-domain traceability is needed (Requirements -> Design -> Code -> Tests), and should we integrate cybersecurity requirements (ISO 21434) into the plan?
+
+The ECU is a safety-related automotive product developed in compliance with ISO 26262 and Automotive SPICE.
+
+Safety Classification:
+• Expected ASIL Level: ASIL-B to ASIL-D depending on the safety functions allocated to the ECU.
+• Final ASIL classification will be determined through Hazard Analysis and Risk Assessment (HARA).
+
+Required Functional Safety Artifacts:
+• Item Definition
+• Hazard Analysis and Risk Assessment (HARA)
+• Safety Goals
+• Functional Safety Concept (FSC)
+• Technical Safety Concept (TSC)
+• Functional Safety Requirements (FSR)
+• Technical Safety Requirements (TSR)
+• Software Safety Requirements (SSR)
+• Safety Analysis (FMEA, FTA)
+• Safety Verification & Validation Reports
+• Safety Case
+• Functional Safety Assessment (FSA)
+
+Traceability Requirements:
+End-to-end bidirectional traceability shall be maintained across the complete development lifecycle:
+Business Requirements → System Requirements → Software Requirements → Architecture → Design → Source Code → Unit Tests → Integration Tests → System Tests → Verification & Validation → Release.
+
+Traceability will be managed using an Application Lifecycle Management (ALM) tool.
+
+Cybersecurity:
+Yes. The Software Quality Assurance Plan shall integrate ISO/SAE 21434 cybersecurity requirements.
+
+Cybersecurity deliverables include:
+• Cybersecurity Goals
+• Threat Analysis and Risk Assessment (TARA)
+• Cybersecurity Requirements
+• Secure Coding Guidelines
+• Security Verification & Validation
+• Vulnerability Assessment
+• Penetration Testing
+• Cybersecurity Case
+
+Internal Audit Interview Template
+Question 1 – Audit Scope
+
+What is the scope of the Quality Management System?
+
+Please provide:
+
+• Industry
+• Products/Services
+• Sites Included
+• Organizational Units
+• Processes Included
+• Applicable Standards
+• Customer-Specific Requirements
+• Regulatory Requirements
+• Exclusions
+• Audit Objectives
+
+The audit scope covers the organization's ISO 9001:2015 Quality Management System for Automotive Software Development. Included Processes: • Customer Requirements Management • Project Planning and Management • Software Requirements Engineering • Software Architecture and Design • Software Development • Software Verification and Validation • Software Quality Assurance • Configuration Management • Change Management • Defect Management • Risk Management • Supplier Quality Management • Release and Delivery Management • Corrective and Preventive Actions (CAPA) • Internal Audit • Management Review • Competency and Training Products/Services: • Automotive ECU Embedded Software • Software Quality Assurance Services • Software Process Improvement • Engineering Documentation • Customer Software Releases Sites Included: • Bangalore Development Centre (Primary Site) • Remote engineering teams supporting the project Exclusions: • Hardware Manufacturing • Production Assembly Operations • Sales and Marketing Activities • Finance and Human Resources (except where they support the QMS) • Customer Manufacturing Facilities The audit objective is to verify conformity with ISO 9001:2015 requirements, organizational QMS procedures, customer-specific requirements, and the effectiveness of process implementation.
+
+Question 2: Who are the process owners and primary auditee contacts for each included process (and at which site), so I can plan interviews and access during the audit?
+The audit will be conducted at the Bangalore Development Centre, with interviews scheduled for the respective process owners and key stakeholders.
+
+Process Owners and Primary Auditee Contacts
+
+1. Customer Requirements Management
+   • Process Owner: Project Manager
+   • Auditee: Business Analyst / Requirements Engineer
+   • Site: Bangalore Development Centre
+
+2. Project Planning and Management
+   • Process Owner: Project Manager
+   • Auditee: Scrum Master / Project Lead
+   • Site: Bangalore Development Centre
+
+3. Software Requirements Engineering
+   • Process Owner: Requirements Engineering Lead
+   • Auditee: Requirements Engineers
+   • Site: Bangalore Development Centre
+
+4. Software Architecture and Design
+   • Process Owner: Software Architect
+   • Auditee: Senior Software Architects
+   • Site: Bangalore Development Centre
+
+5. Software Development
+   • Process Owner: Development Manager
+   • Auditee: Technical Leads and Software Engineers
+   • Site: Bangalore Development Centre
+
+6. Software Verification and Validation
+   • Process Owner: Test Manager
+   • Auditee: Test Leads and Test Engineers
+   • Site: Bangalore Development Centre
+
+7. Software Quality Assurance
+   • Process Owner: Software Quality Assurance Manager
+   • Auditee: Software Quality Engineers
+   • Site: Bangalore Development Centre
+
+8. Configuration Management
+   • Process Owner: Configuration Manager
+   • Auditee: Configuration Engineers
+   • Site: Bangalore Development Centre
+
+9. Change and Defect Management
+   • Process Owner: Engineering Manager
+   • Auditee: Development Lead and Quality Lead
+   • Site: Bangalore Development Centre
+
+10. Risk Management
+    • Process Owner: Project Manager
+    • Auditee: Risk Coordinator
+    • Site: Bangalore Development Centre
+
+11. Supplier Quality Management
+    • Process Owner: Supplier Quality Manager
+    • Auditee: Procurement and Supplier Quality Representatives
+    • Site: Bangalore Development Centre
+
+12. Internal Audit
+    • Process Owner: Lead Quality Manager
+    • Auditee: Internal Auditors
+    • Site: Bangalore Development Centre
+
+13. Management Review
+    • Process Owner: Quality Head
+    • Auditee: Senior Management Team
+    • Site: Bangalore Development Centre
+
+All interviews will be coordinated through the Project Manager and Quality Assurance Manager. Process documentation, records, tools, and evidence will be made available during the audit.
+
+Question 3: Do you have up-to-date, approved QMS procedures and work instructions for each included process, and where are they stored? How is document control managed (versioning, review/approval, distribution), and how is evidence of conformance maintained (records, KPIs)?
+Yes. All QMS procedures, process documents, work instructions, templates, and engineering standards are current, approved, version-controlled, and available to authorized personnel.
+
+Document Repository
+• QMS Manual
+• Standard Operating Procedures (SOPs)
+• Process Descriptions
+• Work Instructions
+• Engineering Standards
+• Templates and Forms
+• Audit Checklists
+• Training Records
+
+All controlled documents are maintained in Microsoft SharePoint and Confluence with access managed through role-based permissions.
+
+Document Control Process
+• Every document has a unique document number.
+• Version control is maintained using major and minor revisions.
+• Documents undergo technical review before approval.
+• Final approval is provided by the respective Process Owner or Quality Manager.
+• Obsolete documents are archived and removed from active use.
+• Change history and revision logs are maintained for every document.
+• Periodic document reviews are conducted annually or whenever significant process changes occur.
+
+Evidence of Conformance
+
+Records maintained include:
+• Project Plans
+• Software Quality Assurance Plans
+• Review Records
+• Test Plans
+• Test Reports
+• Defect Logs
+• CAPA Records
+• Risk Registers
+• Configuration Management Records
+• Internal Audit Reports
+• Management Review Minutes
+• Training Records
+• Customer Feedback
+• Supplier Evaluation Records
+
+Quality KPIs monitored include:
+• Defect Density
+• Test Coverage
+• Review Effectiveness
+• Requirement Traceability Coverage
+• Defect Leakage
+• On-Time Delivery
+• Audit Nonconformities
+• CAPA Closure Time
+• Customer Satisfaction
+• Process Compliance Score
+
+Evidence is maintained electronically within the organization's ALM, Jira, Confluence, SharePoint, and document management systems with complete traceability and audit history.
+
+Chain of Thoughts Examples
+1. CAPA Generator
+Act as a Senior Quality Engineer.
+
+Think through this problem step by step.
+
+Step 1 - Understand the problem.
+Step 2 - Identify immediate containment.
+Step 3 - Identify root causes using 5 Why.
+Step 4 - Validate the root cause.
+Step 5 - Generate corrective actions.
+Step 6 - Generate preventive actions.
+Step 7 - Assign owner.
+Step 8 - Assign due dates.
+Step 9 - Define effectiveness verification.
+Step 10 - Create CAPA report.
+
+Issue:
+<Problem Description>
+
+Output:
+• CAPA Report
+• Timeline
+• Responsibilities
+• Verification Plan
+
+2. FMEA Generator 
+Act as an Automotive Functional Safety Expert.
+
+Reason through the analysis step by step.
+
+1. Understand the product.
+2. Identify each process step.
+3. Identify failure modes.
+4. Identify effects.
+5. Identify causes.
+6. Existing controls.
+7. Rate Severity.
+8. Rate Occurrence.
+9. Rate Detection.
+10. Calculate RPN.
+11. Recommend actions.
+12. Estimate new RPN.
+
+Output in AIAG-VDA FMEA table.
+
+3. Internal Audit Planner
+Act as ISO 9001 Lead Auditor.
+
+Reason step by step.
+
+1. Understand audit scope.
+2. Determine applicable clauses.
+3. Identify risks.
+4. Create audit schedule.
+5. Generate interview questions.
+6. Evidence required.
+7. Expected findings.
+8. Possible NCs.
+
+Generate:
+• Audit Plan
+• Checklist
+• Evidence Matrix
+
+4. Software Quality Plan Generator
+Think through the project lifecycle.
+
+1. Understand project.
+2. Standards.
+3. Risks.
+4. Reviews.
+5. Testing.
+6. Metrics.
+7. Deliverables.
+8. Release readiness.
+
+Generate Software Quality Assurance Plan.
+
+5. Risk Assessment Assistant
+Analyze step by step.
+
+• Hazard
+• Cause
+• Probability
+• Impact
+• Detection
+• Mitigation
+• Residual Risk
+Generate Risk Register.
+
+Example:
+1. CAPA Generator 
+Act as a Senior Quality Engineer.
+
+Think through this problem step by step.
+
+Step 1 - Understand the problem.
+Step 2 - Identify immediate containment.
+Step 3 - Identify root causes using 5 Why.
+Step 4 - Validate the root cause.
+Step 5 - Generate corrective actions.
+Step 6 - Generate preventive actions.
+Step 7 - Assign owner.
+Step 8 - Assign due dates.
+Step 9 - Define effectiveness verification.
+Step 10 - Create CAPA report.
+
+Issue:
+<Problem Description>
+
+Output:
+• CAPA Report
+• Timeline
+• Responsibilities
+• Verification Plan
+
+Thank you. Below is a complete CAPA framework you can use right away. Since the Problem Description is not provided, I’ve included a fully editable CAPA Report template with placeholders. I’ve also included a concise, high-level plan aligned to your 10-step approach, and a ready-to-fill Timeline, Responsibilities, and Verification Plan.
+High-level approach (concise, not internal reasoning)
+•	Step 1: Understand the problem and scope clearly (what, where, when, impact).
+•	Step 2: Contain the issue to prevent recurrence in the short term (immediate actions).
+•	Step 3: Perform root cause analysis using 5 Whys and validate the root cause(s).
+•	Step 4: Determine and validate corrective actions that fix the root cause(s).
+•	Step 5: Determine preventive actions to prevent recurrence in the process/system.
+•	Step 6: Assign owners and due dates for all actions.
+•	Step 7: Define a verification plan to confirm effectiveness.
+•	Step 8: Execute actions, collect evidence, and document results.
+•	Step 9: Review effectiveness and close CAPA when criteria are met.
+•	Step 10: Create formal CAPA report, timeline, responsibilities, and verification plan.
+Output 1: CAPA Report CAPA ID: [CAPA-YYYY-NNN] Issue Summary: [Concise one-liner describing the issue] Problem Description: [Detailed description of the nonconformance or failure, including location, batch/lot, equipment, operator, time, and impact] Scope: [Process, product families, or systems affected] Impact/Risk: [Severity/criticality, customer impact, safety/compliance impact] Date Detected: [YYYY-MM-DD] Containment Actions Taken (Immediate) – Date: [YYYY-MM-DD]
+•	[Action 1]
+•	[Action 2]
+•	[Action 3]
+Root Cause Analysis (5 Whys)
+•	Why 1: [Statement]
+•	Why 2: [Statement]
+•	Why 3: [Statement]
+•	Why 4: [Statement]
+•	Why 5 (Root Cause): [Root cause identified]
+•	Evidence supporting root cause: [e.g., logs, inspection records, operator interviews]
+Validated Root Cause(s)
+•	Root Cause(s) Confirmed: [Root cause statement(s)]
+•	Verification Evidence: [Data, observations, test results]
+•	Risk Reduction Justification: [Why this fixes the issue and reduces risk]
+Corrective Actions (for each root cause)
+•	CA-1 Title: [e.g., Update work instruction, rework defective units, change tool setup]
+•	Description: [What will be done and how]
+•	Owner: [Role/Name]
+•	Due Date: [YYYY-MM-DD]
+•	Status: [Not Started/In Progress/Completed]
+•	Verification Method: [How you will verify effectiveness]
+•	CA-2 Title: [If multiple root causes]
+•	Description:
+•	Owner:
+•	Due Date:
+•	Status:
+•	Verification Method:
+Preventive Actions (to prevent recurrence)
+•	PA-1 Title: [Process/system change, training, automation, checklists]
+•	Description:
+•	Owner:
+•	Due Date:
+•	Status:
+•	Verification Method:
+•	PA-2 Title:
+•	Description:
+•	Owner:
+•	Due Date:
+•	Status:
+•	Verification Method:
+Verification Plan (how effectiveness will be verified)
+•	Objective: [What you are trying to prove (e.g., no reoccurrence over X cycles)]
+•	Acceptance Criteria: [Quantitative or qualitative criteria]
+•	Data Sources: [Which records, logs, SPC data, audits, etc.]
+•	Sampling Plan: [Sample size, frequency, selection method]
+•	Methods: [Inspections, tests, process capability studies, trend analysis]
+•	Verification Schedule: [Dates/times for verification activities]
+•	Required Evidence: [Photos, data tables, certificates, test reports]
+•	Sign-off: [Who approves effectiveness and CAPA closure]
+Effectiveness Verification Results
+•	Date: [YYYY-MM-DD]
+•	Result: [Meets/Partially Meets/Does Not Meet]
+•	Evidence Summary: [Key data, charts, audit results]
+•	Follow-up Actions (if needed): [Additional actions requested, if effectiveness not demonstrated]
+CAPA Status
+•	Status: [Open / In Progress / Closed]
+•	Closure Date (if closed): [YYYY-MM-DD]
+•	Close Justification: [Brief justification that CAPA criteria are met]
+Output 2: Timeline (typical sequence with owners)
+•	Issue Detected: [Date] – [Location/Line/Operator] – Owner: [Role/Name]
+•	Containment Implemented: [Date] – Owner: [Role/Name]
+•	Problem Clarified / Scope Defined: [Date]
+•	Root Cause Analysis Completed: [Date] – Owner: [Quality/Process Engineer]
+•	CAPA Plan Approved: [Date] – Approver: [Name]
+•	Corrective Actions Implemented: [Date] – Owner: [Role/Name]
+•	Preventive Actions Implemented: [Date] – Owner: [Role/Name]
+•	Verification Plan Executed: [Date(s)]
+•	Effectiveness Verification Completed: [Date]
+•	CAPA Closure Granted: [Date] – Approver: [Name]
+Output 3: Responsibilities (RACI-style)
+•	Quality Assurance / CAPA Owner: [Name]
+•	Responsible for: CAPA plan creation, tracking, and closure
+•	Process Owner (Line/Process): [Name]
+•	Responsible for: Implementing corrective/preventive actions in process
+•	Manufacturing / Operations Lead: [Name]
+•	Responsible for: On-floor action execution, equipment changes
+•	Documentation/Training Lead: [Name]
+•	Responsible for: Updating work instructions, training materials
+•	IT / Automation (if applicable): [Name]
+•	Responsible for: Any software/tool changes, data capture improvements
+•	Supervisor/Shift Manager: [Name]
+•	Responsible for: Daily execution, adherence checks
+•	Verification/QA Auditor: [Name]
+•	Responsible for: Data collection, verification activities, sign-off
+•	Customer / Regulatory Liaison (if needed): [Name]
+•	Responsible for: Communicating status to customers or regulators
+Output 4: Verification Plan (concise)
+•	Objective: Confirm that corrective and preventive actions eliminate recurrence and do not introduce new issues
+•	Acceptance Criteria: No recurrence in [time period], defect rate reduced to [target], process capability improved to [Cp/Cpk target], audit findings improved by [score]
+•	Data & Metrics: [Defect counts, scrap rate, downtime, audit findings, SPC signals]
+•	Sampling Plan: [e.g., 5 samples per shift for 4 weeks, random selection]
+•	Methods: [Process audit, product inspection, SPC trend analysis, cross-functional review]
+•	Data Analysis: [Control charts, Pareto analysis, trend analysis]
+•	Evidence Requirements: [Records, screenshots, test reports, training records]
+•	Review & Sign-off: [QA Manager name], [Process Owner name]
+How to fill this template (quick guide)
+•	Start with Problem Description and Scope to set boundaries.
+•	List Immediate Containment actions with dates to show what was done right away.
+•	Use 5 Whys to reach a verifiable root cause; attach any supporting evidence (logs, video, measurements).
+•	For each root cause, define at least one corrective action and one preventive action; assign owners and due dates.
+•	Develop a verification plan with clear acceptance criteria and data sources; run verification and document results.
+•	Keep the CAPA status updated; close only when effectiveness criteria are met.
+•	Store all artifacts (evidence, logs, test results, training records) in a central CAPA folder.
+Next steps
+•	Please provide the Problem Description (and any known impact data, affected processes, and preliminary containment steps). I can then fill in the CAPA Report, Timeline, Responsibilities, and Verification Plan with concrete entries, owners, and due dates tailored to your situation.
+
+Problem Description: During System Integration Testing (SIT), the Automotive ECU intermittently resets while the vehicle is in operation. The issue occurs during high CPU load when multiple CAN messages are processed simultaneously.
+
+Impact:
+
+Software release delayed by 2 weeks.
+Functional Safety verification blocked.
+35 defects reported during SIT.
+Potential customer dissatisfaction if released.
+High project risk due to production milestone approaching.
+
+Affected Processes:
+
+Software Development
+Software Integration
+System Testing
+Configuration Management
+Change Management
+Requirements Traceability
+
+Preliminary Containment Actions:
+
+Stop release of Build v2.3.
+Freeze further code changes except critical fixes.
+Assign dedicated investigation team.
+Increase logging to capture reset conditions.
+Inform Project Manager and Functional Safety Manager.
+Perform regression testing on previous stable build.
+
+Since you're building AIQEP, you can make the interview prompt more structured so every CAPA begins with the same information.
+Problem Description:
+Severity:
+Project:
+Customer:
+Product:
+Phase:
+Date Detected:
+Reported By:
+
+Impact
+• Safety Impact
+• Quality Impact
+• Customer Impact
+• Schedule Impact
+• Cost Impact
+
+Affected Processes
+• Requirements
+• Design
+• Development
+• Testing
+• Configuration Management
+• Release Management
+
+Immediate Containment
+• Action 1
+• Action 2
+• Action 3
+
+Known Evidence
+• Logs
+• Test Reports
+• Screenshots
+• Defect IDs
+• Audit Findings
+
+AIQEP – CAPA Intake Template v1.0
+Problem Description
+Describe the issue clearly, including what happened, where it occurred, expected behaviour, and actual behaviour.
+
+Severity
+□ Critical
+□ High
+□ Medium
+□ Low
+
+Project
+Project Name:
+
+Customer
+Customer Name:
+
+Product
+Product / ECU / Software Version:
+
+Phase
+□ Requirements
+□ Design
+□ Development
+□ Unit Testing
+□ Integration Testing
+□ System Testing
+□ Validation
+□ Production
+□ Field Issue
+
+Date Detected
+DD/MM/YYYY
+
+Reported By
+Name / Team
+
+--------------------------------------------------
+
+Impact Assessment
+
+Safety Impact
+Describe any functional safety implications.
+
+Quality Impact
+Describe product or process quality impact.
+
+Customer Impact
+Describe customer impact.
+
+Schedule Impact
+Delay to milestones or SOP.
+
+Cost Impact
+Estimated financial impact.
+
+--------------------------------------------------
+
+Affected Processes
+
+☐ Requirements Management
+☐ Architecture & Design
+☐ Software Development
+☐ Code Review
+☐ Unit Testing
+☐ Integration Testing
+☐ System Testing
+☐ Validation
+☐ Configuration Management
+☐ Change Management
+☐ Release Management
+☐ Supplier Management
+
+--------------------------------------------------
+
+Immediate Containment Actions
+
+Action 1
+
+Action 2
+
+Action 3
+
+Owner
+
+Completion Date
+
+--------------------------------------------------
+
+Known Evidence
+
+☐ Error Logs
+
+☐ Test Reports
+
+☐ Screenshots
+
+☐ Defect Reports
+
+☐ Requirement IDs
+
+☐ Code Review Records
+
+☐ Audit Findings
+
+☐ Customer Complaints
+
+☐ Risk Register
+
+☐ Change Requests
+
+Reference Numbers:
+
+Tree of Thought:
+Act as an Automotive Quality Engineering Expert.
+
+A software defect escaped to production.
+
+Generate three possible root cause branches.
+
+Branch A
+Requirements issue
+
+For this branch evaluate
+
+• Supporting Evidence
+• Probability
+• Impact
+• Corrective Action
+• Preventive Action
+
+Branch B
+Development issue
+
+Evaluate
+
+• Evidence
+• Risk
+• Cost
+• Timeline
+
+Branch C
+Testing Process issue
+
+Evaluate
+
+• Missing verification
+• Test Coverage
+• Escape Mechanism
+• Future Prevention
+
+Compare all three branches.
+
+Recommend the most probable root cause.
+
+Generate
+
+• CAPA
+• Verification Plan
+• Effectiveness Criteria
+
+2. Audit Planning 
+Instead of producing one audit plan.
+Generate
+Branch A
+Process Audit
+Branch B
+Product Audit
+Branch C
+System Audit
+
+Compare
+Coverage
+Resources
+Time
+Risk
+Compliance
+
+Recommend the best audit strategy.
+
+3. FMEA Generator 
+
+One of your flagship AIQEP assistants.
+Prompt:
+Generate three risk mitigation strategies.
+Branch A
+Design Change
+Evaluate
+• Risk Reduction
+• Cost
+• Time
+Branch B
+Process Control
+Evaluate
+• Detection Improvement
+• Implementation
+Branch C
+Additional Testing
+Evaluate
+• Coverage
+• Resources
+• Residual Risk
+Compare all branches.
+Recommend the best mitigation.
+
+4. Software Quality Assurance Plan
+Instead of one Quality Plan
+Generate
+Branch A
+Agile QAP
+Branch B
+Hybrid V Model
+Branch C
+ASPICE-oriented QAP
+Compare
+Cost
+Compliance
+Team Size
+Safety
+Delivery Speed
+Recommend one.
+
+5. AI Quality Strategy
+Generate
+Three Quality Improvement Roadmaps
+Branch A
+Automation First
+Branch B
+Process First
+Branch C
+AI Assisted Quality
+Compare
+ROI
+Implementation Time
+Business Value
+Risk
+
+AIQEP – Tree-of-Thought Risk Assessment Prompt
+Act as a Senior Automotive Functional Safety Engineer, Quality Manager, and Risk Assessment Expert.
+
+Before recommending a risk mitigation strategy, interview me.
+
+Ask only ONE question at a time.
+
+Continue until sufficient information has been collected.
+
+Collect information about:
+
+• System Type
+• Product
+• Project Phase
+• Customer
+• Regulatory Standards
+• Safety Classification (ASIL if applicable)
+• Cybersecurity Requirements
+• Schedule Constraints
+• Budget Constraints
+• Team Size
+• Technology Stack
+• Existing Risks
+• Risk Appetite
+• Business Priorities
+
+After the interview is complete:
+
+Generate three independent solution branches.
+
+Branch A – Preventive Strategy
+
+Evaluate:
+• Benefits
+• Risks
+• Cost
+• Timeline
+• Resources Required
+• Compliance Impact
+• Long-term Sustainability
+
+Branch B – Detective Strategy
+
+Evaluate:
+• Benefits
+• Risks
+• Cost
+• Timeline
+• Detection Capability
+• Monitoring Effort
+• Compliance Impact
+
+Branch C – Corrective Strategy
+
+Evaluate:
+• Benefits
+• Risks
+• Cost
+• Timeline
+• Recovery Capability
+• Operational Impact
+• Compliance Impact
+
+Create a weighted decision matrix using:
+
+• Risk Reduction – 30%
+• Cost – 20%
+• Schedule – 15%
+• Compliance – 20%
+• Ease of Implementation – 15%
+
+Score every branch from 1–10.
+
+Calculate the weighted score.
+
+Recommend the best strategy.
+
+Finally generate:
+
+• Risk Register
+• Recommended Actions
+• Action Priority
+• Responsible Owner
+• Target Completion Date
+• Success Criteria
+
+AIQEP – Tree-of-Thought FMEA Generator
+Act as a Senior Automotive Functional Safety Engineer, AIAG-VDA FMEA Expert, and Quality Engineering Consultant.
+
+Before generating the FMEA, interview me.
+
+Ask ONE question at a time.
+
+Continue asking questions until enough information has been collected.
+
+Collect information about:
+
+• System Type
+• Product / ECU
+• Function being analysed
+• Project Phase
+• Customer
+• Applicable Standards (ISO 26262, ASPICE, ISO 21434, etc.)
+• Safety Classification (ASIL if applicable)
+• Current Design or Process Controls
+• Known Risks or Historical Issues
+• Regulatory Constraints
+• Timeline Constraints
+• Budget Constraints
+
+Do not generate the FMEA until the interview is complete.
+
+After the interview:
+
+Generate three independent mitigation branches.
+
+Branch A – Design Improvement
+
+Evaluate:
+• Failure Mode addressed
+• Effectiveness
+• Cost
+• Development effort
+• Implementation time
+• Impact on Safety
+• Residual Risk
+
+Branch B – Process Improvement
+
+Evaluate:
+• Additional process controls
+• Inspection capability
+• Detection improvement
+• Cost
+• Implementation effort
+• Residual Risk
+
+Branch C – Testing & Verification Improvement
+
+Evaluate:
+• Additional verification activities
+• Test coverage improvement
+• Detection capability
+• Cost
+• Schedule impact
+• Residual Risk
+
+Compare all three branches using a weighted decision matrix.
+
+Evaluation Criteria
+
+• Risk Reduction – 35%
+• Feasibility – 20%
+• Cost – 15%
+• Schedule Impact – 10%
+• Compliance – 20%
+
+Score each branch from 1–10.
+
+Recommend the best mitigation strategy.
+
+Finally generate:
+
+• Complete AIAG-VDA FMEA Table
+• Recommended Actions
+• Responsible Owner
+• Target Completion Date
+• Revised S/O/D Ratings
+• Revised RPN or Action Priority
+• Verification Plan
+
+If the AI asks:
+
+"Please share the specific risk context (system type, regulatory constraints, timeline, and budget)."
+
+A realistic answer would be:
+
+System Type:
+Automotive Body Control Module (BCM)
+
+Product:
+Embedded Software ECU
+
+Function:
+Door Lock Control
+
+Project Phase:
+System Design
+
+Customer:
+Automotive OEM
+
+Applicable Standards:
+ISO 26262
+Automotive SPICE
+ISO/SAE 21434
+
+Safety Classification:
+ASIL-B
+
+Known Risk:
+The door lock may fail to unlock during low battery voltage conditions.
+
+Current Controls:
+Requirements Review
+Design Review
+Unit Testing
+Integration Testing
+
+Timeline:
+Production SOP scheduled for July 2027.
+
+Budget:
+The project has a moderate budget. Preference is to implement mitigation using existing hardware and software architecture where possible without significant increase in development cost.
+
+Business Objective:
+Reduce risk while maintaining functional safety compliance and minimizing schedule impa
+
+Question 1 of 12: What is the System Type (for example: ADAS, Powertrain, Body/Chassis, Infotainment, or other), and is this a single ECU or a networked architecture (slaves/masters, ECUs, domain controllers, etc.)?
+System Type: Automotive Body Electronics (Body Control Module – BCM).
+
+Architecture: Networked ECU architecture.
+
+The system consists of:
+
+1 Body Control Module (Master ECU)
+Door Control Modules (Slave ECUs)
+Instrument Cluster
+Gateway ECU
+Power Management Module
+
+Communication Network:
+
+CAN FD (Primary communication)
+LIN Bus (Door and window modules)
+Diagnostic communication via UDS (ISO 14229)
+
+Function Under Analysis:
+Central Door Lock Control and Vehicle Access System.
+
+Scope of FMEA:
+System Design FMEA (DFMEA) for the Body Control Module during the System Design phase before SOP.
+
+Project Objective:
+Identify potential failure modes, evaluate risks, recommend mitigation actions, and reduce Action Priority (AP) before production release while ensuring compliance with ISO 26262, Automotive SPICE, and customer quality requirements.
+
+Question 2 of 12: Who is the Customer or program owner for this BCM project, and are there any specific customer requirements we should capture (must-have features, safety goals, warranty constraints, or compliance expectations)? we shall stop with only till Question 2 and expect the output
+Customer / Program Owner
+
+Customer:
+ABC Automotive OEM
+
+Program Owner:
+Vehicle Body Electronics Program Manager
+
+Vehicle Program:
+Next Generation Electric SUV Platform
+
+Customer Requirements
+
+Functional Requirements
+
+• Reliable central locking system.
+• Remote lock/unlock using key fob and mobile app.
+• Automatic speed-based door locking.
+• Emergency unlock after collision.
+• Low power consumption during sleep mode.
+
+Safety Goals
+
+• Prevent unintended door unlock while driving.
+• Ensure occupants can exit safely after an accident.
+• Prevent unauthorized vehicle access.
+• Maintain reliable communication between BCM and Door Control Modules.
+
+Warranty Requirements
+
+• Zero critical field failures during warranty period.
+• Minimum 5-year / 100,000 km durability.
+• Warranty target below 5 PPM.
+
+Compliance Requirements
+
+• ISO 26262
+• Automotive SPICE Level 3
+• ISO/SAE 21434
+• IATF 16949
+• OEM Cybersecurity Guidelines
+
+Quality Targets
+
+• Defect leakage < 1%
+• Test coverage > 95%
+• 100% bidirectional requirements traceability
+• All safety requirements verified before SOP.
+
+At this point (after only Questions 1 & 2), your AIQEP assistant should not wait. It should generate something like:
+Preliminary System Understanding
+System: Body Control Module (BCM)
+Architecture: Networked ECU (CAN FD + LIN)
+Customer: ABC Automotive OEM
+Vehicle Platform: Electric SUV
+Applicable Standards: ISO 26262, ASPICE, ISO 21434, IATF 16949
+Primary Functions: Central locking, remote access, emergency unlock
+Initial Risk Areas
+Loss of CAN communication
+LIN communication failure
+Door lock actuator failure
+Power supply instability
+Software logic errors
+Cybersecurity vulnerabilities
+Preliminary Failure Modes
+Function	Potential Failure Mode	Initial Impact
+Central Locking	Doors fail to lock	Vehicle security compromised
+Remote Unlock	Unlock command not executed	Customer dissatisfaction
+Emergency Unlock	Unlock unavailable after collision	Occupant safety risk
+CAN Communication	Lost communication	BCM functions unavailable
+
+chain of thought example:
+AIQEP Example
+
+Without Chain-of-Thought
+
+Generate a CAPA for this defect.
+
+↓
+
+The AI immediately generates a CAPA.
+
+With Chain-of-Thought
+
+Act as a Senior Quality Engineer.
+
+Reason through the problem step by step.
+
+1. Understand the defect.
+2. Assess the impact.
+3. Identify possible root causes.
+4. Evaluate the evidence.
+5. Determine the most probable root cause.
+6. Define corrective actions.
+7. Define preventive actions.
+8. Verify effectiveness.
+
+Generate the complete CAPA report.
+
+The second prompt produces a more structured and traceable result because the AI reasons through the investigation before producing the final report.
+
+Play Off Method
+The Playoff Method is about generating multiple prompts for the same task, comparing the outputs, and selecting the best prompt.
+Idea
+    ↓
+Prompt A
+
+Prompt B
+
+Prompt C
+    ↓
+Compare Outputs
+    ↓
+Evaluate
+    ↓
+Choose Winner
+    ↓
+Improve Winner
+    ↓
+Save as Reusable Prompt
+
+AIQEP Example 1 – CAPA Generator
+Task
+
+Generate a CAPA Report.
+
+Prompt A
+
+Act as an Automotive Quality Engineer.
+
+Generate a CAPA Report using 8D methodology.
+
+Prompt B
+
+Act as an ISO 9001 Lead Auditor.
+
+Generate a CAPA Report including:
+
+Root Cause
+5 Why
+Corrective Action
+Preventive Action
+Verification
+Risk Assessment
+Timeline
+Owners
+Prompt C
+
+Act as a Senior Quality Assurance Manager.
+
+Interview me first.
+
+Ask one question at a time.
+
+Collect all information before generating the CAPA.
+
+Playoff Evaluation
+Criteria	      A	        B	          C
+Completeness	⭐⭐	    ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Accuracy	    ⭐⭐⭐	   ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Reusability	  ⭐⭐	    ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+
+Winner
+
+✅ Prompt C
+
+Reason:
+Interactive interview produces the highest quality CAPA.
+
+AIQEP Example 2 – Internal Audit Plan
+
+Prompt A
+
+Generate an ISO 9001 Internal Audit Plan.
+
+Prompt B
+
+Act as Lead Auditor.
+
+Generate:
+
+Audit Plan
+Checklist
+Risks
+Questions
+Evidence
+
+Prompt C
+
+Act as Lead ISO 9001 Auditor.
+
+Interview me first.
+
+Ask one question at a time until enough information is collected.
+
+Generate:
+
+Audit Plan
+Audit Checklist
+Risks
+Audit Questions
+Evidence Required
+
+Winner
+
+✅ Prompt C
+
+AIQEP Example 3 – FMEA Generator
+
+Prompt A
+
+Generate DFMEA.
+
+Prompt B
+
+Generate DFMEA including
+
+Function
+Failure Mode
+Effects
+Causes
+Current Controls
+
+Prompt C
+
+Act as Functional Safety Engineer.
+
+Interview me.
+
+Collect
+
+System
+Customer
+Requirements
+Safety Goals
+Architecture
+
+Then generate DFMEA.
+
+Winner
+
+✅ Prompt C
+
+AIQEP Example 4 – Test Strategy
+
+Prompt A
+
+Generate Test Strategy.
+
+Prompt B
+
+Generate Automotive Test Strategy.
+
+Prompt C
+
+Act as Verification Lead.
+
+Interview me.
+
+Collect
+
+Requirements
+Standards
+Test Levels
+Automation
+Coverage
+
+Generate complete Test Strategy.
+
+Winner
+
+✅ Prompt C
+
+Example CAPA Generator
+Question 1: Please provide a concise problem statement including: The exact nonconformity or failure mode The affected product/system (model, part numbers, and revision if applicable) The initial customer impact and symptoms Any known geographic or production batch/vin ranges Any containment actions that have already been taken (Answer this with as much concrete detail as you have available.)
+Problem Statement
+
+A critical software defect was identified during System Integration Testing in the Body Control Module (BCM). The ECU intermittently fails to control the automatic headlamp function after multiple ignition ON/OFF cycles. The issue occurs due to incorrect software state transition handling, resulting in loss of the automatic lighting feature.
+
+Affected Product/System
+
+Product: Body Control Module (BCM)
+ECU Software Version: BCM_SW_v3.2.1
+Hardware Revision: Rev C
+Platform: Automotive ECU
+Project: Next Generation Passenger Vehicle Program
+
+Initial Customer Impact and Symptoms
+
+Automatic headlamps do not switch ON under low-light conditions.
+Driver intervention is required.
+Potential customer dissatisfaction and increased warranty claims.
+Safety concern due to reduced visibility during night driving.
+
+Geographic / Production Batch
+
+Prototype vehicles used for System Integration Testing.
+Approximately 20 evaluation vehicles affected.
+No customer production vehicles released.
+Production SOP planned for July 2027.
+
+Containment Actions Already Taken
+
+Release of affected software build stopped immediately.
+Defect logged in Jira (Defect ID: BCM-4587).
+Root cause investigation initiated by Software Development and Quality teams.
+Regression testing suspended until corrective software patch is available.
+Project stakeholders and Functional Safety Manager notified.
+Daily defect review meetings initiated until closure.
+
+Question 2: Please provide the current risk assessment for this BCM software failure, including: Severity, Occurrence, and Detection ratings (as used in your PFMEA or risk matrix) and the resulting RPN Any PFMEA reference(s) or risk-register entries related to the BCM automatic headlamp control and software state transitions Any interim risk mitigations or safety controls you’ve implemented (even ifTemporary) Any data or criteria you’re using to justify the current risk levels (e.g., test results, logs, failure modes)
+
+Current Risk Assessment
+
+Severity (S): 8/10
+
+Failure of the automatic headlamp function can reduce driver visibility during low-light conditions.
+Although manual headlamp operation is available, delayed activation presents a potential safety concern and affects customer confidence.
+
+Occurrence (O): 4/10
+
+The issue is intermittent and has been reproduced in approximately 3 out of 20 prototype vehicles during System Integration Testing.
+It occurs after repeated ignition ON/OFF cycles under specific software state transition conditions.
+
+Detection (D): 5/10
+
+The defect is detectable during System Integration Testing using automated test cases and manual verification.
+Existing Unit Testing did not identify the issue because the software state transition sequence was not fully covered.
+Risk Priority Number (RPN)
+Rating	Value
+Severity	8
+Occurrence	4
+Detection	5
+RPN	160
+PFMEA / Risk Register References
+
+PFMEA Reference: PFMEA-BCM-2027-014
+
+Failure Mode
+
+Automatic headlamp function fails to activate after multiple ignition cycles.
+
+Potential Effect
+
+Reduced vehicle visibility in low-light conditions.
+Customer dissatisfaction.
+Increased warranty claims.
+Possible safety concern.
+
+Risk Register Entry
+
+Risk ID: RISK-BCM-021
+
+Description:
+Software state transition logic may fail under repeated ignition cycling, resulting in intermittent automatic headlamp malfunction.
+
+Current Risk Status:
+High – Open
+
+Interim Risk Mitigations
+Software release frozen until corrective action is verified.
+Daily defect review meetings established.
+Additional logging enabled to capture state transition events.
+Manual verification added to System Integration Testing.
+Functional Safety Manager notified.
+Regression testing expanded to include repeated ignition cycle scenarios.
+Software Change Control Board approval required before release.
+Evidence Supporting the Risk Assessment
+
+Test Results
+
+Issue reproduced in 3 of 20 prototype vehicles.
+Failure observed after 10–15 consecutive ignition cycles.
+
+Diagnostic Logs
+
+State machine entered an unexpected software state.
+Automatic headlamp activation event not triggered.
+
+Failure Analysis
+
+Root cause suspected to be incorrect software state transition handling.
+Investigation ongoing.
+
+Verification Evidence
+
+Unit Tests: Passed
+Integration Tests: Failed
+System Tests: Failed under repeated ignition cycle scenario.
+
+Customer Impact Assessment
+
+No field vehicles affected.
+Defect detected before Start of Production (SOP).
+Production release currently blocked pending CAPA completion.
+Why this is a strong AIQEP example
+
+This response demonstrates realistic automotive quality practices by:
+
+Applying FMEA concepts (Severity, Occurrence, Detection, RPN).
+Linking the issue to a PFMEA and Risk Register.
+Recording interim containment actions.
+Supporting the assessment with objective evidence (test results, logs, failure analysis).
+
+It creates a rich foundation for the next CAPA interview questions on root cause analysis, corrective actions, preventive actions, and effectiveness verification.
+
+Question 3: What is the proposed scope and plan for the corrective action (PCA) and release strategy? Please specify: Whether the fix will be software-only (e.g., BCM_SW_v3.2.2 or later) or if hardware changes are required. A high-level verification plan (unit tests, integration tests, system/vehicle tests) and the acceptance criteria to close the CAPA. Any preliminary owners or leads for the PCA and verification activities.
+Proposed Corrective Action (PCA) Scope
+
+The corrective action will be a software-only fix. No hardware changes are currently required, as the investigation indicates the issue is caused by incorrect software state transition logic within the Body Control Module (BCM).
+
+Software Release
+
+Current Version: BCM_SW_v3.2.1
+Corrective Release: BCM_SW_v3.2.2
+Hardware Revision: Rev C (No Change)
+Software Change Request: SCR-BCM-127
+Change Classification: Major Software Defect Fix
+
+The software update will:
+
+Correct the state transition logic for the automatic headlamp control.
+Improve error handling during repeated ignition ON/OFF cycles.
+Add diagnostic logging for unexpected state transitions.
+Update software documentation and traceability records.
+High-Level Verification Plan
+1. Unit Testing
+
+Objective:
+Verify the corrected software logic at module level.
+
+Activities:
+
+State transition logic validation.
+Boundary condition testing.
+Code review.
+Static analysis.
+Unit test execution.
+
+Acceptance Criteria:
+
+100% of modified functions pass.
+No Critical or High severity defects.
+Static analysis findings resolved.
+2. Integration Testing
+
+Objective:
+Verify interaction between BCM software modules.
+
+Activities:
+
+CAN communication validation.
+LIN communication validation.
+State machine transition verification.
+Ignition ON/OFF cycle testing.
+Regression testing.
+
+Acceptance Criteria:
+
+No unexpected state transitions.
+Automatic headlamp activation functions correctly.
+No regression defects introduced.
+3. System / Vehicle Testing
+
+Objective:
+Validate the complete feature in vehicle conditions.
+
+Activities:
+
+Functional verification.
+Low-light automatic headlamp testing.
+Repeated ignition cycle testing.
+Environmental testing.
+End-to-End vehicle validation.
+
+Acceptance Criteria:
+
+Automatic headlamp activates correctly under all specified operating conditions.
+Zero reproducible failures after 500 consecutive ignition cycles.
+All customer requirements successfully verified.
+Functional Safety requirements remain satisfied.
+Customer acceptance tests successfully completed.
+CAPA Closure Criteria
+
+The CAPA will be considered complete when:
+
+Root cause has been confirmed and documented.
+Software version BCM_SW_v3.2.2 released internally.
+All verification activities successfully completed.
+Regression testing completed with no Critical or High defects.
+Updated FMEA completed and approved.
+Risk Priority Number (RPN) reduced from 160 to an acceptable level.
+Lessons Learned documented.
+Quality Manager and Project Manager approve CAPA closure.
+Preliminary Owners
+Activity	Owner
+Root Cause Analysis	Software Technical Lead
+Software Correction	Embedded Software Development Lead
+Code Review	Software Architect
+Unit Testing	Software Development Team
+Integration Testing	Integration Test Lead
+System & Vehicle Testing	System Validation Team
+Functional Safety Review	Functional Safety Manager
+CAPA Management	Quality Assurance Manager
+Final CAPA Approval	Project Manager & Quality Manager
+Expected Deliverables
+Updated Software (BCM_SW_v3.2.2)
+Root Cause Analysis Report
+Corrective Action Report
+Unit Test Report
+Integration Test Report
+System Test Report
+Regression Test Report
+Updated DFMEA/PFMEA
+Updated Risk Register
+Requirements Traceability Matrix
+CAPA Closure Report
+Lessons Learned Document
+(Why this is a good AIQEP example
+
+This response demonstrates how a CAPA extends beyond simply fixing a defect. It covers the complete quality lifecycle:
+
+Corrective Action (software fix)
+Verification (unit, integration, and system testing)
+Acceptance Criteria (objective evidence for closure)
+Ownership (clear responsibilities)
+Deliverables (updated engineering artifacts)
+
+This makes it a strong example for your AIQEP CAPA Assistant, as it reflects the structure and rigor expected in an automotive software quality environment.)
+
+Problem Statement
+
+Generate a complete Automotive CAPA Report.
+
+Prompt A (Basic)
+Generate a CAPA Report for the following issue.
+
+<Problem Description>
+
+Result
+
+Basic CAPA
+Little context
+Generic output
+Prompt B (Structured)
+Act as an Automotive Quality Engineer.
+
+Generate
+
+• Root Cause
+• 5 Why
+• CAPA
+• Timeline
+• Owners
+• Verification Plan
+
+Problem:
+
+<Problem Description>
+
+Result
+
+Better structure
+Still assumes information
+May hallucinate missing details
+Prompt C (Interview Pattern)
+Act as an Automotive Quality Manager.
+
+Interview me.
+
+Ask ONE question at a time.
+
+Collect all information.
+
+Only after collecting sufficient information generate
+
+• Root Cause
+• 5 Why
+• CAPA
+• Timeline
+• Owners
+• Verification
+• Lessons Learned
+
+Result
+
+Complete
+Accurate
+Tailored
+Minimal assumptions
+Playoff Evaluation
+Criteria	          Prompt A	    Prompt B	Prompt C
+Accuracy	          ⭐⭐	      ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Completeness	      ⭐	        ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Context Awareness	  ⭐	        ⭐⭐	      ⭐⭐⭐⭐⭐
+Engineering Quality	⭐⭐	      ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Reusability	        ⭐⭐	      ⭐⭐⭐⭐	⭐⭐⭐⭐⭐
+Hallucination Risk	High	Medium	Low
+Winner
+
+🏆 Prompt C
+
+Why?
+Collects all required engineering information before generating the CAPA.
+Produces outputs based on actual project data rather than assumptions.
+Can be reused across different automotive, medical, aerospace, or manufacturing projects with only the interview responses changing.
+Engineering Improvement (Version 2)
+
+After choosing Prompt C, improve it further.
+
+Instead of:
+
+Interview me.
+
+Upgrade it to:
+
+Interview me.
+
+Ask one question at a time.
+
+Continue until you have collected enough information.
+
+If any mandatory information is missing, continue asking questions.
+
+At the end summarize the collected information.
+
+Ask for confirmation.
+
+Only then generate
+
+• CAPA
+• Root Cause
+• 5 Why
+• Fishbone
+• Risk Assessment
+• Verification Plan
+• Lessons Learned
+
+This becomes Prompt C Version 2, which is even more robust.
+
+Playoff Method – CAPA Generator Template
+
+Problem:
+Generate an Automotive CAPA.
+
+Candidate Prompts:
+✓ Prompt A – Basic
+✓ Prompt B – Structured
+✓ Prompt C – Interview Pattern
+
+Evaluation Criteria:
+✓ Accuracy
+✓ Completeness
+✓ Context Awareness
+✓ Reusability
+✓ Hallucination Risk
+
+Winner:
+🏆 Prompt C
+
+Reason:
+Interactive interviewing produced the most accurate and reusable engineering output with the least reliance on assumptions.
+
+Final Prompt:
+Prompt C Version 2 (Enhanced)
+
+Problem Statement
+
+Objective
+
+Prompt A
+
+Output A
+
+------------------------------------
+
+Prompt B
+
+Output B
+
+------------------------------------
+
+Prompt C
+
+Output C
+
+------------------------------------
+
+Evaluation Criteria
+
+✓ Accuracy
+✓ Completeness
+✓ Context Awareness
+✓ Reusability
+✓ Scalability
+✓ Hallucination Risk
+
+------------------------------------
+
+Pairwise Comparison
+
+A vs B
+
+A vs C
+
+B vs C
+
+------------------------------------
+
+Winner
+
+Reason
+
+------------------------------------
+
+Version 1.0 Approved Prompt
+
+Lessons Learned
+
+Role Play
+Act as a Senior Quality Engineering Manager.
+
+Interview me before creating onboarding materials.
+
+Ask one question at a time.
+
+Collect:
+
+• Audience
+• Experience Level
+• Department
+• Learning Objectives
+• Applicable Standards
+• Tools Used
+• Duration
+• Delivery Method
+
+After collecting information generate:
+
+• Training Plan
+• Learning Objectives
+• Agenda
+• Slides
+• Practical Exercises
+• Assessment Questions
+• FAQs
+• Completion Checklist
+
+Effective Text Prompts for Image Generation
+This becomes
+
+AIQEP Image Prompt Collection
+
+Example
+
+Prompt A
+
+Generate Fishbone Diagram
+
+Prompt B
+
+Generate professional Fishbone Diagram with six branches.
+
+Prompt C
+
+Act as an ISO 9001 Quality Consultant.
+
+Generate a clean, presentation-ready Fishbone Diagram showing:
+
+• Man
+• Machine
+• Method
+• Material
+• Measurement
+• Environment
+
+Corporate style.
+Blue and white theme.
+High resolution.
+
+Exactly like your Playoff Method.
+
+
+
+Option 1 (Recommended)
+
+AIQEP
+
+AI Quality Engineering Assistant
+
+Demonstrate
+
+Interview Pattern
+
+↓
+
+Chain of Thought
+
+↓
+
+Tree of Thought
+
+↓
+
+Playoff Method
+
+↓
+
+Final Prompt
+
+Example
+
+Generate
+
+CAPA
+FMEA
+Audit Plan
+Risk Assessment
+
+Text prompts for Image
+AIQEP Image Portfolio
+1. CAPA Workflow
+Basic Prompt
+
+Create a workflow diagram showing the CAPA process from Problem Identification to Effectiveness Verification.
+
+Style Modifier
+
+Create a clean isometric corporate workflow diagram showing the ISO 9001 CAPA lifecycle.
+
+Quality Booster
+
+High-resolution, professional infographic, blue and white corporate theme, sharp focus, vector style, presentation-ready.
+
+2. Fishbone Diagram
+
+Prompt
+
+Create an ISO 9001 Fishbone Diagram showing six categories:
+
+• Man
+• Machine
+• Method
+• Material
+• Measurement
+• Environment
+
+Professional quality management infographic.
+
+3. FMEA Dashboard
+
+Prompt
+
+Design a futuristic automotive FMEA dashboard showing Severity, Occurrence, Detection, RPN, Risk Matrix, Corrective Actions and Status using blue corporate UI.
+
+4. AI Quality Assistant
+
+Prompt
+
+Design an AI Quality Engineering Assistant dashboard where engineers interact with AI modules including CAPA Generator, FMEA Generator, Audit Assistant, Risk Assessment, 5 Why Analysis and Fishbone Generator.
+
+5. ISO 9001 Process Map
+
+Prompt
+
+Generate an ISO 9001 process map showing Customer Requirements → Design → Development → Testing → Release → Customer Feedback → Continuous Improvement using PDCA.
+
+6. Automotive BCM Architecture
+
+Prompt
+
+Create a Body Control Module architecture diagram showing BCM, Headlamp ECU, CAN Bus, Rain Sensor, Light Sensor, Instrument Cluster and Diagnostic Tool.
+
+Image Progression (following the lab)
+
+The lab demonstrates starting with a simple prompt, then improving it with style modifiers, quality boosters, and additional detail.
+
+You can mirror that process for your projects. For example:
+
+Example 1 – Fishbone Diagram
+
+Level 1
+
+Generate a Fishbone Diagram.
+
+Level 2
+
+Generate an isometric Fishbone Diagram.
+
+Level 3
+
+Generate an isometric ISO 9001 Fishbone Diagram in corporate blue and white.
+
+Level 4
+
+Generate a presentation-ready ISO 9001 Fishbone Diagram with six labeled branches (Man, Machine, Method, Material, Measurement, Environment), high resolution, vector style, sharp focus, suitable for executive presentations.
+
+
