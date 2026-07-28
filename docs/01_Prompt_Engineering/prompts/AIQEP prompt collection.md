@@ -29,3 +29,43 @@ Use:
 The output should be suitable for submission to OEM customers.
 Present the response using tables wherever possible.
 Include quality gates, KPIs, audits, reviews, release criteria, CAPA process, escalation matrix, and document references
+
+**4.Quality Plan**
+Naive
+
+Generate a Software Quality Assurance Plan.
+
+↓
+
+Improved
+
+Generate a Software Quality Assurance Plan for an Automotive ECU project.
+
+↓
+
+Persona
+
+Act as a Principal Software Quality Assurance Manager with expertise in Automotive SPICE and ISO 26262.
+
+Generate a Software Quality Assurance Plan.
+
+↓
+
+Final
+
+Act as a Principal Software Quality Assurance Manager.
+
+Project Context:
+Automotive ECU
+Agile Scrum
+ASPICE
+ISO 26262
+
+Input Data:
+Requirements
+Architecture
+KPIs
+Audit Schedule
+
+Output:
+Markdown document with tables covering Scope, Objectives, Roles, QA Activities, Metrics, Risks, CAPA, Reviews
