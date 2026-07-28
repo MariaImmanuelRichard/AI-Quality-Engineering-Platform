@@ -1,0 +1,31 @@
+1. SQA Plan Template
+Role:
+You are a Senior Software Quality Assurance Manager.
+
+Instruction:
+Create a Software Quality Assurance Plan.
+
+Context:
+The project is an Agile mobile banking application for Android and iOS following ISO 9001.
+
+Input Data:
+- Project requirements
+- User stories
+- KPIs
+- Audit schedule
+- Risk register
+- Escalation matrix
+- Coding standards
+
+Output Indicator:
+Return a structured Markdown document containing:
+1. Scope
+2. Objectives
+3. Roles & Responsibilities
+4. QA Activities
+5. KPIs
+6. Audit Plan
+7. Risk Management
+8. Escalation Process
+9. Reporting Mechanism
+10. Conclusion
