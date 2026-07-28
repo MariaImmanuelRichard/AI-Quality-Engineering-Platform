@@ -1,0 +1,122 @@
+Persona Pattern: Assigning the AI a specific professional role helps shape its perspective, expertise, tone, and communication style. This often leads to responses that are more accurate, contextually appropriate, and aligned with the expectations of that role.
+
+Without Persona:
+Draft a software quality assurance plan.
+
+With Persona:
+Act as a Senior Software Quality Assurance Manager with expertise in Automotive SPICE, ISO 26262, and Agile Scrum.
+Develop a Software Quality Assurance Plan for an Automotive ECU project.
+
+The second prompt is likely to produce:
+More domain-specific terminology
+Better structured output
+Industry best practices
+Higher-quality recommendations
+
+Iterative refinement cycle
+I would update the prompt with clearer instructions about the tone, such as asking the AI to be more empathetic, warm, and customer-focused. Then I would test the revised prompt and continue refining it until the response matches the desired style.
+Example of Iterative Refinement
+Version 1
+Act as a Customer Service Manager.
+
+Draft a response to a customer complaint about a delayed shipment.
+Analysis
+Response is professional.
+Tone is too formal.
+Lacks empathy.
+Doesn't acknowledge the customer's frustration.
+Refined Version
+Act as a Customer Service Manager.
+
+Draft a warm and empathetic response to a customer complaint about a delayed shipment.
+Requirements:
+- Begin with a sincere apology.
+- Acknowledge the customer's frustration.
+- Explain the delay briefly.
+- Reassure the customer that their order is being tracked.
+- Thank them for their patience.
+- End with an invitation to contact support if they need further assistance.
+
+Use a friendly, understanding, and customer-focused tone.
+Keep the response under 200 words.
+
+effective prompt
+This prompt includes all the best practices you've learned:
+
+✅ Persona: Act as an academic writing advisor.
+✅ Clear Task: Brainstorm thesis statements.
+✅ Context: Research paper on climate change.
+✅ Specific Focus: Agriculture and sustainable farming.
+✅ Output Requirements: Five thesis statements, numbered, with explanations.
+AIQEP Equivalent
+
+If IBM had asked a Quality Engineering scenario, the same prompt pattern would be:
+
+Act as a Senior Software Quality Engineering Consultant.
+
+Help me brainstorm five quality improvement strategies for reducing software defects in an Automotive ECU project.
+
+Focus on Agile Scrum, Automotive SPICE, and ISO 26262.
+
+Present the ideas as a numbered list and explain the advantages of each strategy.
+
+Prompt Pattern
+Role
+↓
+Task
+↓
+Topic/Domain
+↓
+Specific Focus
+↓
+Output Requirements
+
+| Without Persona            | With Persona                            |
+| -------------------------- | --------------------------------------- |
+| Generic knowledge and tone | Role-specific expertise and perspective |
+| General suggestions        | Domain-specific recommendations         |
+| Inconsistent style         | Professional communication style        |
+| Basic responses            | Structured, context-aware outputs       |
+
+Act as a Product Marketing Manager for an AI software company.
+
+Generate three LinkedIn posts announcing the launch of the AI Quality Engineering Platform (AIQEP).
+
+Each post should include:
+- An engaging headline
+- A concise description of AIQEP's value
+- A call-to-action encouraging professionals to explore the project
+- Five relevant hashtags
+
+Maintain a professional, informative, and engaging tone.
+Limit each post to 200 words.
+
+specificity
+Using the word "relevant" guides the AI to generate hashtags that match the product and audience. This makes the social media posts more discoverable, targeted, and effective than using generic or unrelated hashtags.
+
+Generic Prompt
+Generate five hashtags.
+
+Possible output:
+
+#Technology
+#Innovation
+#Software
+#AI
+#Business
+
+These are correct but very broad.
+
+Specific Prompt
+Generate five relevant LinkedIn hashtags for launching the AI Quality Engineering Platform (AIQEP) targeted at Software Quality Engineers and AI Professionals.
+
+Possible output:
+
+#AIQualityEngineering
+#SoftwareQuality
+#QualityEngineering
+#GenerativeAI
+#PromptEngineering
+
+These are much more targeted to your audience and objective.
+
